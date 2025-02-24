@@ -40,6 +40,8 @@ public partial class ContactPage : ContentPage
             new Contact {Name="Elena Martin", ImageName="pic4.PNG", Description="Chef", PhoneNumber="(999)-000-1111", Email="emartin@example.com"},
             new Contact {Name="Elliot Sanders", ImageName="pic1.PNG", Description="Entrepreneur", PhoneNumber="(123)-789-4560", Email="esanders@example.com"}
         }));
+
+        Contacts.ItemsSource = ContactList;
     }
 
     private void Contact_SelectionChanged(object sender, SelectionChangedEventArgs e)
