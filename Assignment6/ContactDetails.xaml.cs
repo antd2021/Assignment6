@@ -6,7 +6,14 @@ public partial class ContactDetails : ContentPage
 	{
 		InitializeComponent();
         PersonImage.Source = person.ImageName;
-        LblPersonName.Text = person.Name;
-        LblPersonDesc.Text = person.Description;
+        LblPersonName.Text = $"Name: {person.Name}";
+        LblPersonDesc.Text = $"Description: {person.Description}";
+        LblPhone.Text = $"Phone: {person.PhoneNumber}";
+        LblEmail.Text = $"Email: {person.Email}";
+    }
+
+    private async void OnBackButtonClicked(object sender, EventArgs e)
+    {
+        await Navigation.PopAsync();
     }
 }

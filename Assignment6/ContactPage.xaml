@@ -20,7 +20,7 @@
 
             <CollectionView.GroupHeaderTemplate>
                 <DataTemplate>
-                    <Label FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" BackgroundColor="Gray" Text="{Binding GroupName}"HorizontalOptions="Center"/>
+                    <Label FontSize="20" FontAttributes="Bold" TextColor="AntiqueWhite" BackgroundColor="Gray" Text="{Binding GroupName}"/>
                 </DataTemplate>
             </CollectionView.GroupHeaderTemplate>
 
